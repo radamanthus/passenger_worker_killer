@@ -1,0 +1,11 @@
+Run in test mode
+- read in the text file input
+- parse the text file input and get the PID-memory usage pairs
+- identify the PIDs that exceed the memory limit
+- if the dry-run flag is set: output the kill command that will be run to terminate the bloated workers, but do not run the command
+
+Run in live mode
+- read in the output from running passenger-memory-stats
+- if the dryrun flag is set: output the kill command that will be run to terminate the bloated workers, but do not run the command
+
+Add tests
